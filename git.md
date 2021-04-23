@@ -323,7 +323,7 @@ example:
 
 $ git pull origin staging
 
-From account_name.git.beanstalkapp.com:/account_name/repository_name
+From account_name.git.beanstalkapp.com:/accountname/repositoryname
  *branch            staging    -> FETCH_HEAD
  
  *new branch      staging    -> origin/staging
@@ -332,7 +332,7 @@ Already up-to-date.
 
 $ git pull git@accountname.git.beanstalkapp.com:/acccount_name/repositoryname.git staging
 
-From account_name.git.beanstalkapp.com:/account_name/repository_name
+From account_name.git.beanstalkapp.com:/accountname/repositoryname
  *branch            staging    -> FETCH_HEAD
 
  *new branch      staging    -> origin/staging
@@ -408,28 +408,36 @@ To initialize a new repo with the basic branch structure, use: git flow init [-d
 ## Creating
 To list/start/finish feature branches, use:
 
-  git flow feature
-  git flow feature start name (base)
-  git flow feature finish name
+  * git flow feature
+  
+  * git flow feature start name (base)
+  
+  * git flow feature finish name
 
 To push/pull a feature branch to the remote repository, use:
 
-  git flow feature publish name
-   git flow feature pull (remote) name
+  * git flow feature publish name
+   
+  * git flow feature pull (remote) name
 
 To list/start/finish release branches, use:
 
-  git flow release
-  git flow release start release (base)
-  git flow release finish release
+  * git flow release
+  
+  * git flow release start release (base)
+  
+  * git flow release finish release
 
 To list/start/finish hotfix branches, use:
 
-  git flow hotfix
-  git flow hotfix start release (base)
-  git flow hotfix finish release
+  * git flow hotfix
+  
+  * git flow hotfix start release (base)
+  
+  * git flow hotfix finish release
 
 To list/start support branches, use:
 
-  git flow support
-  git flow support start release (base)
+  * git flow support
+  
+  * git flow support start release (base)
