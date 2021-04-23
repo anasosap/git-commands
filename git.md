@@ -3,6 +3,7 @@ A command is a directive to a computer program to perform a specific task. We ar
 
 ## Directories
 mkdir: It is the directory name, used to create a new directory. 
+
 rmdir: It is used to remove a directory.
 
 ## Navigate
@@ -28,13 +29,13 @@ With Git, there are many configurations and settings possible. Git config is how
 
 $ git config --global user.email "your email": set what email commits will be from on a local computer.
 
-example: 
+* example: 
 
 $ git config --global user.email "2009130@upy.edu.mx"
 
 $ git config --global user.name "your name": set what name commits will be from on a local computer.
 
-example:
+* example:
 
  $ git config --global user.name "anasosa"
 
@@ -43,7 +44,7 @@ Use this commands when you want to start or create a repository.
 
 $ git init: This command turns a directory into an empty Git repository.After running git init, adding and committing files/directories is possible.
 
-example: 
+* example: 
 
 $ git init
 
@@ -51,7 +52,7 @@ Initialized empty Git repository in /Users/computer-name/Documents/website/.git/
 
 $ git clone remote_URL: use git clone to copy and download the repository to a computer.
 
-example: 
+* example: 
 
 $ git clone git@accountname.git.beanstalkapp.com:/acccount_name/repositoryname.git
 
@@ -70,7 +71,7 @@ Checking connectivity... done.
 ## Basic Workflow
 $ git status: This command returns the current state of the repository. If a file is in the staging area, but not committed, it shows with git status. Or, if there are no changes it’ll return nothing to commit, working directory clean.
 
-example: 
+* example: 
  
  #Message when files have not been staged (git add)
 
@@ -108,7 +109,7 @@ nothing to commit, working directory clean
 
 $ git add <file or directory name>: Adds files in the to the staging area for Git. There are a few different ways to use git add, by adding entire directories, specific files, or all unstaged files.
 
-example:
+* example:
 
  #To add all files not staged:
 
@@ -124,7 +125,7 @@ $ git add css
 
 $ git commit -m "Commit message": Record the changes made to the files to a local repository. For easy reference, each commit has a unique ID.
 
-example: 
+* example: 
 
 $ git commit -m "My first commit message"
 
@@ -136,7 +137,7 @@ create mode 100644 homepage/index.html
 
 $ git rm --cached <file name>: To remove a file from the working index (cached).
 
-example:
+* example:
 
 $ git rm --cached css/style.css
 
@@ -144,7 +145,7 @@ rm 'css/style.css'
 
 $ git rm -f <file name>: To delete a file (force).
 
-example: 
+* example: 
 
 $ git rm -f css/style.css
 
@@ -152,7 +153,7 @@ rm 'css/style.css'
 
 $ git rm -r --cached <directory name>: To remove an entire directory from the working index (cached).
 
-example:
+* example:
 
 $ git rm -r --cached css/
 
@@ -162,7 +163,7 @@ rm 'css/style.min.css'
 
 $ git rm -r -f <file name>: To delete an entire directory (force).
 
-example: 
+* example: 
 
 $ git rm -r -f css/
 
@@ -172,7 +173,7 @@ rm 'css/style.min.css'
 
 $ git stash -u: Store current work with untracked files.
 
-example:
+* example:
 
 $ git stash -u
 
@@ -182,7 +183,7 @@ HEAD is now at 4c0f37c Adding new file to branch
 
 $ git stash pop: Bring stashed work back to the working directory.
 
-example:
+* example:
 
 $ git stash pop
 
@@ -207,7 +208,7 @@ Dropped refs/stash@{0} (3561897724c1f448ae001edf3ef57415778755ec)
 
 $ git log: Show entire git log
 
-example:
+* example:
 
 $ git log
 
@@ -229,7 +230,7 @@ Date:   Wed Oct 19 16:27:27 2016 -0500
 
 $ git log --<after/before/since/until>=date:  Show git log with date pameters.
 
-example: 
+* example: 
 
 $ git log --before="Oct 20"
 
@@ -243,7 +244,7 @@ Date:   Wed Oct 19 16:27:27 2016 -0500
 
 $ git log --<author>="Author Name": Show git log based on commit author.
 
-example:
+* example:
 
 $ git log --author="Brian Kerr"
 
@@ -259,13 +260,13 @@ Date:   Tue Oct 25 17:46:11 2016 -0500
 
 $ git remote <command> <remote_name> <remote_URL>: Add remote repository.
 
-example:
+* example:
 
 $ git remote add origin git@accountname.git.beanstalkapp.com:/acccount_name/repositoryname.git
 
 $ git remote -v: List named remote repositories.
 
-example:
+* example:
 
 $ git remote -v
 
@@ -275,7 +276,7 @@ origin git@accountname.git.beanstalkapp.com:/acccount_name/repositoryname.git (p
 
 $ git push <remote_URL/remote_name> <branch>: Push a specific branch to a remote with named remote.
 
-example:
+* example:
 
 $ git push origin staging
 
@@ -295,7 +296,7 @@ To git@accountname.git.beanstalkapp.com:/acccount_name/repositoryname.git
 
 $ git push —all: Push all local branches to remote repository.
 
-example:
+* example:
 
 $ git push --all
 
@@ -319,7 +320,7 @@ To git@accountname.git.beanstalkapp.com:/acccount_name/repositoryname.git
 
 $ git pull <branch_name> <remote_URL/remote_name>: To get the latest version of a repository run git pull. This pulls the changes from the remote repository to the local computer.
 
-example:
+* example:
 
 $ git pull origin staging
 
@@ -342,13 +343,13 @@ Already up-to-date.
 ## Branches
 $ git branch <branch_name>: Create a new branch.
 
-example:
+* example:
 
 $ git branch new_feature
 
 $ git branch -a: List all remote or local branches.
 
-example:
+* example:
 
 $ git branch -a
 
@@ -364,7 +365,7 @@ $ git branch -a
 
 $ git branch -d <branch_name>: Delete a branch.
 
-example:
+* example:
 
 $ git branch -d new_feature
 
@@ -372,13 +373,15 @@ Deleted branch new_feature (was 0254c3d).
 
 $ git checkout <branch_name>: Checkout an existing branch.
 
-example: $ git checkout new_feature
+* example:
+
+$ git checkout new_feature
 
 Switched to branch 'new_feature'
 
 $ git checkout -b <new_branch>: Checkout and create a new branch with that name.
 
-example:
+* example:
 
 $ git checkout -b staging
 
@@ -386,7 +389,7 @@ Switched to a new branch 'staging'
 
 $ git merge <branch_name>: Merge changes into current branch.
 
-example:
+* example:
 
 $ git merge new_feature
 
@@ -401,6 +404,7 @@ homepage/index.html | 297 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  create mode 100644 homepage/index.html
 
 # Gitflow
+GitFlow is a collection of Git commands to provide many repository operations with just single command. It helps to keep track of features, hotfixes and releases in projects. It is used for projects where you might have multiple streams of work running concurrently.
 
 ## Initialization
 To initialize a new repo with the basic branch structure, use: git flow init [-d]
